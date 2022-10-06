@@ -230,7 +230,7 @@ function get_random_port {
   until (( 1024 <= num && num < 65536)); do
     num=$(( RANDOM + (RANDOM % 2) * 32768 ));
   done;
-  echo "80";
+  echo "1029";
 }
 
 function create_persisted_state_dir() {
